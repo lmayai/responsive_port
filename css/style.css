@@ -1,0 +1,210 @@
+/*
+reglas: en  cascada, contienen
+-selectores
+-declaraciones
+-propiedades
+-valores
+*/
+
+/*selector de etiquite: tag a manipular (header, section ...)
+html{
+    background-color: rgb(25, 136, 136) !important; 
+}*/
+
+/*Selector descendente: Elemento hijo de algun otro
+header div nav ol li a{
+}*/
+
+/*Selector de clase
+.linkk{
+}*/
+
+/*Selector ID
+#id_link{
+}*/
+ 
+body{
+    font-family: 'Noto Serif SC', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*h1 h2 h3 h4 h5 h6{   SIN LAS COMAS selecciona descendentemente*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Krub', sans-serif;
+}
+
+h1 {
+    line-height: 1.5em; /*!.5 el valor de la fuente*/
+    line-height: 150%;
+    line-height: 1.5; /*0 a 1 e s el 100 porciente*/
+    font-size: 40px;
+    font-weight: 900;   /*Se mide en valores de 100enes, 100 a 1000, 400 es el normal*/
+    /*Bold: 600
+    Normal : 400
+    */
+    font-weight: bold;
+    /*font-style: italic;*/
+    letter-spacing: -1px; /* negativo, es un 20%de un pixel menos */
+    /*Las fuentes pueden transformarse: mayus*/
+    text-transform: initial;
+    /*text-decoration: underline;*/
+    color: white;
+
+    margin:100px 520px 70px 5px ;/*margin: top right bottom left;*/
+
+}
+
+h1 strong{
+    color: #343CAB;
+}
+
+.portfolio{
+    background: #fafafa;
+}
+
+.project{
+    /* border:10px solid red; /*tamaño - tipo -  stilo
+    border-top: 10px solid red;
+    border-bottom: 10px solid springgreen;
+    border-left: 10px solid tan;
+    border-right: 10px solid violet; */
+    border-color: red; /*necesita ancho de borde*/
+    border-width:10px; /*necesita rambien estilo*/
+    border-top-style: solid; /**la 23 props son necesarioas*/
+    border:1px solid grey; /*tamaño - tipo -  stilo*/
+    border-radius: 10px;
+    border-top-left-radius: 5px;
+    margin: 50px 50px;
+    padding: 25px;
+    background: white;
+    box-sizing: border-box;/*con esta propiedad se limitea el tamaño del elemento siempre con wodth y height*/
+    display: flex;
+}
+
+
+.project_details{
+    width: 500px;
+    /*margin: 10px 20px; primero es toop y bottom y los otros son los lados*/
+    /*height: 100px; /*SOlapar elementos con height*/
+   /*  margin: 0 auto; para centrar con los margin y teniendo la propiedaddisplay block
+    display: block;*/
+}
+
+.project_imgContainer{
+    width: 500px;
+}
+
+ol,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*Nada de listaaaas*/
+}
+
+figure{
+    margin: 0;
+}
+
+.header{
+    background-color:#343CAB;/* #1b2127; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    /*align-items: center;*/
+}
+
+.header img{
+    height: 100px;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header a{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+}
+.header a:hover{
+    background-color:rgb(12, 17, 65);
+}
+
+.menu{
+    height: inherit;
+}
+
+.header a{ /*Selector descendente*/
+    color: white; /*Ya que los enlaces tienen estilos propios, toca cambiar el estilo directmente*/
+    text-decoration: none;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+
+.hero{
+    height: 400px;
+    background-image: url('../img/hero.png');
+    background-color: #1b2127;
+    background-size: 600px ; /*en mosaico*/
+    background-repeat: no-repeat;/*Se quita el mosaico*/
+    background-position-x: right; /*Ahora la imagen sobre la derecha*/
+    display: flex;
+    /*justify-content: flex-start;*/
+    align-items: center;
+}
+
+.hero h1{
+    margin: 0;
+}
+
+
+/*FLEXBOX CONCEPTS*/
+.flexbox{
+    display: flex;
+    flex-direction:row;
+    height: 300px;
+    flex-wrap: wrap; /*con este e hace un salto de linea, por defecto es wrap*/
+    justify-content: space-evenly;
+    align-items:center;
+
+    display: none;
+
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    /*margin: 20px;/*COn este margin se separan los elementos, pero lo haremos sin usar margin*/
+    /*flex-shrink: 0/*QUe sea o no encojibles, el problema es que aumenta el tamano de la ventana, por tal no sirve*/
+}
+
+footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+footer img{
+    vertical-align: middle;
+}
