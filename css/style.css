@@ -24,14 +24,22 @@ header div nav ol li a{
 }*/
  
 body{
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /*h1 h2 h3 h4 h5 h6{   SIN LAS COMAS selecciona descendentemente*/
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Krub', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h2{
+    color:#026fff;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 h1 {
@@ -75,13 +83,34 @@ h1 strong{
     border:1px solid grey; /*tamaño - tipo -  stilo*/
     border-radius: 10px;
     border-top-left-radius: 5px;
-    margin: 50px 50px;
+    margin: 50px 0;
     padding: 25px;
     background: white;
     box-sizing: border-box;/*con esta propiedad se limitea el tamaño del elemento siempre con wodth y height*/
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.project strong{
+    font-family: 'Noto Serif SC', serif;
+}
+
+.project_title{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.project_course
+.project_date
+.project_url
+{
+    margin:10px 0;
+}
+.project_description
+{
+    font-size:20px;
+}
 
 .project_details{
     width: 500px;
@@ -154,20 +183,24 @@ figure{
 
 .hero{
     height: 400px;
-    background-image: url('../img/hero.png');
+    /* background-image: url('../img/hero.png'); */
     background-color: #1b2127;
-    background-size: 600px ; /*en mosaico*/
-    background-repeat: no-repeat;/*Se quita el mosaico*/
-    background-position-x: right; /*Ahora la imagen sobre la derecha*/
+    /* background-size: 600px ; en mosaico */
+    /* background-repeat: no-repeat;Se quita el mosaico */
+    /* background-position-x: right; Ahora la imagen sobre la derecha */
     display: flex;
     /*justify-content: flex-start;*/
     align-items: center;
+    justify-content: space-between;
 }
 
 .hero h1{
     margin: 0;
 }
 
+.hero img{
+    object-fit: cover;
+}
 
 /*FLEXBOX CONCEPTS*/
 .flexbox{
@@ -208,6 +241,131 @@ footer a {
 footer img{
     vertical-align: middle;
 }
+
+
+
+.portfolio{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.events{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.event{
+    margin: 10px;
+    width: 550px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.event img{
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event_detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative; /*Depende del contexto, por el momento de superponer*/
+    padding: 20px;
+    text-align: center;
+}
+
+.event_description{
+    text-align: left;
+}
+
+.event_url{
+    color:#056fff;
+    border: 1px solid; /*el color lo mtoma del que viene*/
+    padding: 5px 20px;   
+}
+
+.event_big_title{
+    margin-left: 20px;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.social_link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0px 10px;
+    background-repeat: no-repeat;
+}
+
+.social_link.twitter{
+    background-image: url('../img/twitter.svg');
+    background-size: 50px 50px; 
+}
+
+.social_link.facebook{
+    background-image: url('../img/facebook.svg');
+    background-size: 50px 50px; 
+} 
+
+.social_link.instagram{
+    background-image: url('../img/instagram.svg');
+    background-size: 50px 50px; 
+} 
+
+.social_link.github{
+    background-image: url('../img/github.svg');
+    background-size: 50px 50px; 
+} 
+
+.form_email input{  
+    border-color: grey;
+    padding: 5px 20px 5px 30px;
+    border-radius: 5px;
+    border-style: solid;
+    background-image: url('../img/telegram.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form_email button{ 
+    display: block;
+    background: transparent;
+    color: white;
+    border-style: solid;
+    padding: 5px 0;
+    border-radius: 8px;
+    width: 100px;
+    margin-top:20px; 
+    /* margin: 20px auto 0; */
+}
+
+.container{ 
+    width: 1200px;
+    margin: 0 auto;
+    display: inherit;/*OJO!!!! el flex solo se aplica a los hijos*/
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+
 
 @media screen and (max-width:1024px){
 
