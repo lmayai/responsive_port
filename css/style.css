@@ -123,6 +123,7 @@ h1 strong{
 
 .project_imgContainer{
     width: 50%;
+    text-align: right;
 }
 
 .project_imgContainer img{
