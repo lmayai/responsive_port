@@ -90,6 +90,7 @@ h1 strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project strong{
@@ -140,6 +141,7 @@ figure{
     display: flex;
     justify-content: space-between;
     height: 100px;
+    flex-wrap: wrap;
     /*align-items: center;*/
 }
 
@@ -192,6 +194,7 @@ figure{
     /*justify-content: flex-start;*/
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero h1{
@@ -230,6 +233,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -301,6 +305,7 @@ footer img{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    flex-wrap: wrap;
 }
 
 .social_link{
@@ -356,7 +361,8 @@ footer img{
 }
 
 .container{ 
-    width: 1200px;
+    max-width: 1200px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;/*OJO!!!! el flex solo se aplica a los hijos*/
     justify-content: inherit;
@@ -371,9 +377,23 @@ footer img{
 
 }
 
-@media screen and (max-width: 768px){
-    body{
-        border: 10px solid green;
+@media screen and (max-width: 767px){ /*HAsta 768 el eader funciona, pero mas pequeño no, entonces
+    se debe colocar el max width para valores inferior de 768, osea, 767*/
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: initial; /*o tambien el block*/
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
     }
 }
 
