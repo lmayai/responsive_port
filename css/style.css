@@ -99,22 +99,22 @@ h1 strong{
 
 .project_title{
     font-size: 30px;
-    margin: 10px 0;
+    margin-bottom: 0.3em;
 }
 
-.project_course
-.project_date
+.project_course,
+.project_date,
 .project_url
 {
-    margin:10px 0;
+    margin:0.4em 0;
 }
 .project_description
 {
-    font-size:20px;
+    font-size:15px;
 }
 
 .project_details{
-    width: 500px;
+    width: 50%;
     /*margin: 10px 20px; primero es toop y bottom y los otros son los lados*/
     /*height: 100px; /*SOlapar elementos con height*/
    /*  margin: 0 auto; para centrar con los margin y teniendo la propiedaddisplay block
@@ -122,7 +122,11 @@ h1 strong{
 }
 
 .project_imgContainer{
-    width: 500px;
+    width: 50%;
+}
+
+.project_imgContainer img{
+    max-width: 100%;
 }
 
 ol,ul {
@@ -395,10 +399,41 @@ footer img{
     .header .logo{
         text-align: center;
     }
+    .project {
+        display:block;
+    }
+    .project_imgContainer{
+        width:auto;
+        text-align: center;
+    }
+    .project_details{
+        text-align: center;
+        width:auto;
+        font-size: 16px;
+    }
+    .project_title{
+        font-size: 1.5em;
+    }
+    .project_url{
+        font-size: 1em;
+    }
+    .project_course{
+        font-size: 0.7em;
+    }
+    .project_date{
+        font-size: 1em;
+    }
+    .project_description{
+        font-size: .8em;
+    }
 }
 
 @media screen and (max-width:480px){
-
+    .project_details{
+        text-align: center;
+        width:auto;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:320px){
