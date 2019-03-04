@@ -265,8 +265,8 @@ footer img{
 }
 
 .event{
-    margin: 10px;
-    width: 550px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     overflow: hidden;
     background-color: #f4fbff;
