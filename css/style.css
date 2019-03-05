@@ -114,7 +114,8 @@ h1 strong{
 }
 
 .project_details{
-    width: 50%;
+    width: 49%;
+    margin-right: 1%;
     /*margin: 10px 20px; primero es toop y bottom y los otros son los lados*/
     /*height: 100px; /*SOlapar elementos con height*/
    /*  margin: 0 auto; para centrar con los margin y teniendo la propiedaddisplay block
@@ -122,7 +123,8 @@ h1 strong{
 }
 
 .project_imgContainer{
-    width: 50%;
+    width: 49%;
+    margin-right: 1%;
     text-align: right;
 }
 
@@ -251,8 +253,6 @@ footer img{
     vertical-align: middle;
 }
 
-
-
 .portfolio{
     padding: 20px;
     text-transform: uppercase;
@@ -265,7 +265,7 @@ footer img{
 }
 
 .event{
-    margin: 1%;
+    margin: 1%; /* 1 +1 +1+ 1+ 48 + 48 = 100% */
     width: 48%;
     flex-shrink: 0;
     overflow: hidden;
@@ -427,13 +427,25 @@ footer img{
     .project_description{
         font-size: .8em;
     }
+    .event{
+        width:auto;
+        flex-shrink: initial;
+        width: 100%;
+    }
+    .event img{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:479px){
     .project_details{
         text-align: center;
         width:auto;
         font-size: 12px;
+    }
+    .event_detail{
+        margin: -2em 0.5em 0.5em;
+        padding: 1em;
     }
 }
 
