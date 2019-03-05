@@ -309,7 +309,7 @@ footer img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+/*     padding: 0 50px; */
     flex-wrap: wrap;
 }
 
@@ -340,6 +340,10 @@ footer img{
     background-image: url('../img/github.svg');
     background-size: 50px 50px; 
 } 
+
+.form_email{
+    padding-bottom: 1em;
+}
 
 .form_email input{  
     border-color: grey;
@@ -379,7 +383,21 @@ footer img{
 
 
 @media screen and (max-width:1024px){
+    footer{
+        display: block;
+        text-align: center; 
+        border: 1px solid transparent;
+    }
 
+    footer img{
+        display: block;
+        margin: 0.5em auto;
+    }
+
+    .container{
+        padding: 0 1em;
+    }
+    
 }
 
 @media screen and (max-width: 767px){ /*HAsta 768 el eader funciona, pero mas pequeño no, entonces
@@ -435,6 +453,22 @@ footer img{
     .event img{
         width: 100%;
     }
+    .form_email{
+        padding-bottom: 0;
+    }
+    .form_email h3{
+        margin-top: 0;
+    }
+    .contact{
+        height: auto;
+        display: block;
+        text-align: center;
+        padding: 1.5em 0;
+    }
+    .contact button{
+        margin: 1em auto;
+    }
+
 }
 
 @media screen and (max-width:479px){
@@ -447,8 +481,12 @@ footer img{
         margin: -2em 0.5em 0.5em;
         padding: 1em;
     }
+
+
 }
 
 @media screen and (max-width:320px){
-
+    .social_link{
+        padding: 0;
+    }
 } 
