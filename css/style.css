@@ -191,7 +191,7 @@ figure{
 
 
 .hero{
-    height: 400px;
+    height: auto;
     /* background-image: url('../img/hero.png'); */
     background-color: #1b2127;
     /* background-size: 600px ; en mosaico */
@@ -383,6 +383,29 @@ footer img{
 
 
 @media screen and (max-width:1024px){
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden; /*control de los desbordes!*/
+        padding: 2em;
+    }
+    .hero_img{
+        z-index: 1;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        
+    }
+    .hero h1{
+        z-index: 2;
+        /* font-size:1.5em; */
+        text-shadow: 1px 2px 2px #000;
+        background: rgba(0, 0, 0, 0.5)
+    }
+
     footer{
         display: block;
         text-align: center; 
@@ -402,6 +425,10 @@ footer img{
 
 @media screen and (max-width: 767px){ /*HAsta 768 el eader funciona, pero mas pequeño no, entonces
     se debe colocar el max width para valores inferior de 768, osea, 767*/
+    .hero h1{
+        font-size:1.5em;
+    }
+
     .header{
         display: block;
         height: auto;
@@ -472,6 +499,9 @@ footer img{
 }
 
 @media screen and (max-width:479px){
+    .hero h1{
+        font-size:1.1em;
+    }
     .project_details{
         text-align: center;
         width:auto;
