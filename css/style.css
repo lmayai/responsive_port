@@ -380,7 +380,10 @@ footer img{
     flex-wrap: inherit;
 }
 
-
+.html_video{
+    width: 100%; /*SON DIFERENTE entre ambooos*/
+    max-width: 100%;
+}
 
 @media screen and (max-width:1024px){
     .hero{
