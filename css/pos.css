@@ -19,7 +19,7 @@ body{
 }
 
 .sec p span{
-    position: fixed;
+    /* position: sticky; */
     top: 0;
 }
 
@@ -32,5 +32,10 @@ body{
 .resp{
     background: yellow;
     z-index: 1;
+}
 
+.sticky{
+    position:sticky; /*Persigue el posicion*/
+    top:0; /**Una vez toca el top 0, el elemento siempre perseguirá*/
+    background: rgba(0, 0, 0, 0.5);
 }
