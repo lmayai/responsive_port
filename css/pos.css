@@ -19,8 +19,8 @@ body{
 }
 
 .sec p span{
-    position: absolute;
-    top: 0px;
+    position: fixed;
+    top: 0;
 }
 
 .mundo{
