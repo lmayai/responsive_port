@@ -383,6 +383,12 @@ footer img{
 .html_video{
     width: 100%; /*SON DIFERENTE entre ambooos*/
     max-width: 100%;
+    height: auto;
+}
+
+.video-copy{
+    text-align: center;
+    font-style: italic;
 }
 
 @media screen and (max-width:1024px){
