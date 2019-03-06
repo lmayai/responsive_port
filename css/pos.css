@@ -10,15 +10,27 @@ body{
     background: lightgray;
     margin: 10px 0;
     border: 5px solid red;
-    position: relative;
+    
 }
 
 .sec p {
     font-size: 20px;
+    position: relative;
 }
 
 .sec p span{
     position: absolute;
-    top: 40px;
-    background: blue;
+    top: 0px;
+}
+
+.mundo{
+    background: pink;
+    z-index: 2;
+}
+
+
+.resp{
+    background: yellow;
+    z-index: 1;
+
 }
