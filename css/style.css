@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?44tnxc');
-    src:  url('fonts/icomoon.eot?44tnxc#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?44tnxc') format('truetype'),
-      url('fonts/icomoon.woff?44tnxc') format('woff'),
-      url('fonts/icomoon.svg?44tnxc#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?6wpd98');
+    src:  url('../fonts/icomoon.eot?6wpd98#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?6wpd98') format('truetype'),
+      url('../fonts/icomoon.woff?6wpd98') format('woff'),
+      url('../fonts/icomoon.svg?6wpd98#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -25,10 +25,38 @@
   }
   
   .icon-menu:before {
-    content: "\e902";
+    content: "\e9bd";
+  }
+  .icon-facebook:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
+  .icon-skype:before {
+    content: "\eac5";
+  }
+  .icon-linkedin:before {
+    content: "\eac9";
   }
   
+  .icon-menu{
+        position: fixed;
+        top: 0;
+        padding: 20px;
+        font-size: 20px;
+  }
 
+  .icon-facebook, .icon-github, .icon-twitter, .icon-instagram, .icon-linkedin{
+    color: white;
+    font-size: 50px;
+  }
 
 /*
 reglas: en  cascada, contienen
@@ -353,25 +381,6 @@ footer img{
     background-repeat: no-repeat;
 }
 
-.social_link.twitter{
-    background-image: url('../img/twitter.svg');
-    background-size: 50px 50px; 
-}
-
-.social_link.facebook{
-    background-image: url('../img/facebook.svg');
-    background-size: 50px 50px; 
-} 
-
-.social_link.instagram{
-    background-image: url('../img/instagram.svg');
-    background-size: 50px 50px; 
-} 
-
-.social_link.github{
-    background-image: url('../img/github.svg');
-    background-size: 50px 50px; 
-} 
 
 .form_email{
     padding-bottom: 1em;
@@ -582,7 +591,7 @@ footer img{
 
 @media screen and (max-width:320px){
     .social_link{
-        padding: 0;
+        padding: 10px;
     }
 } 
 
