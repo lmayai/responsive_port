@@ -525,11 +525,12 @@ footer img{
 
         /*Se oculta con heigth menos el viewport*/
         left: -100vw;
+        transition: 0.3s;
     }
 
     .menu.is-active{
         left: 0;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .hero h1{
