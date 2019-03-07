@@ -529,6 +529,7 @@ footer img{
 
     .menu.is-active{
         left: 0;
+        transition: 0.5s;
     }
 
     .hero h1{
