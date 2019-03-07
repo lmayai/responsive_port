@@ -179,8 +179,24 @@
         const burguerMenu = document.querySelector('#burguer-menu');
         console.log(menu);
         console.log(burguerMenu);
+        const mediaIpad = window.matchMedia('screen and (max-width:767px)')
+        console.log(mediaIpad);
 
-        burguerMenu.addEventListener('click',hideAndShow);
+        //Los media queries deben detectarse de manera automatica al cambiar de portrait a landscape y vice
+        mediaIpad.addListener(validation);
+
+        function validation(event){
+            console.log(event); //Se verifica como cambia en el listener
+            if(event.matches){
+                burguerMenu.addEventListener('click',hideAndShow);
+            }else{
+                burguerMenu.removeEventListener('click',hideAndShow);
+                // Y se debe quitar ya que hay un consumo de memoria. Optimiza la pagina
+            }
+        }
+
+        
+        
 
         function hideAndShow(){
             if (menu.classList.contains('is-active')){
