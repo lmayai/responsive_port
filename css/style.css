@@ -57,7 +57,7 @@
         line-height: 40px; /**/
         text-align: center;
         position: fixed;
-        z-index: 3;
+        z-index: 5;
         left: 5px;
         top:5px;
   }
@@ -511,6 +511,26 @@ footer img{
     .burguer-menu{
         display: block;
     }
+    .menu{
+        position: fixed;
+        background:rgba(18, 34, 124, 0.9);
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*Se oculta con heigth menos el viewport*/
+        left: -100vw;
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+
     .hero h1{
         font-size:1.5em;
     }
@@ -527,6 +547,10 @@ footer img{
     }
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom:2em;
     }
     .header .logo{
         text-align: center;
